@@ -1,20 +1,29 @@
-class Mobile
-{
-public void switchon()
-{
-System.out.println("Welcome To the Android Phone");
-}
-public void OpenUI(){
-System.out.println("App is opened ");
-}
-public void installApps(){}
+package org.data.structure;
 
-}
-class Main
-{
-public static void main(String args[]){
-Mobile mobile = new Mobile();
-mobile.switchon();
-mobile.OpenUI();
+import java.util.ArrayList;
+import java.util.List;
+
+public class SearchArrayListEx {
+public static void main(String[] args) {
+List<String> list = new ArrayList<>();
+list.add("Suraj");
+list.add("Dheerja");
+list.add("Neeraj");
+list.add("Rishab");
+list.add("Atul");
+list.add("Rubina");
+list.add("Nishanth");
+list.add("Zeeshan");
+list.add("Rubina");
+list.add("Subsreee");
+
+System.out.println(list.contains("Subsreee"));
+
+System.out.println(list.indexOf("Atul"));
+
+System.out.println(list.lastIndexOf("Rubina"));
+
+
+
 }
 }
