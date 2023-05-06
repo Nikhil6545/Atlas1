@@ -1,29 +1,42 @@
 package org.data.structure;
 
 import java.util.ArrayList;
-import java.util.List;
 
-public class SearchArrayListEx {
-public static void main(String[] args) {
-List<String> list = new ArrayList<>();
-list.add("Suraj");
-list.add("Dheerja");
-list.add("Neeraj");
-list.add("Rishab");
-list.add("Atul");
-list.add("Rubina");
-list.add("Nishanth");
-list.add("Zeeshan");
-list.add("Rubina");
-list.add("Subsreee");
-
-System.out.println(list.contains("Subsreee"));
-
-System.out.println(list.indexOf("Atul"));
-
-System.out.println(list.lastIndexOf("Rubina"));
-
-
-
+class Employee
+{
+int age;
+String name;
+public Employee(int age, String name) {
+super();
+this.age = age;
+this.name = name;
 }
+public int getAge() {
+return age;
+}
+public void setAge(int age) {
+this.age = age;
+}
+public String getName() {
+return name;
+}
+public void setName(String name) {
+this.name = name;
+}
+@Override
+public String toString() {
+return "Employee [age=" + age + ", name=" + name + "]";
+}
+
+// Employee emp = new Employee();
+}
+public class UserDefinedObjectArrayEx {
+public static void main(String[] args) {
+
+ArrayList<Employee> employee = new ArrayList<>();
+employee.add(new Employee(20,"Suraj"));
+System.out.println(employee);
+}
+
+
 }
